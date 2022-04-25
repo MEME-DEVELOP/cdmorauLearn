@@ -74,10 +74,11 @@ WSGI_APPLICATION = 'Proyecto_API.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+"""""
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'django_sqlserver',
+        'NAME': 'django_sqlserver2',
         'USER': 'sa',
         'PASSWORD': 'dinosaurio123',
         'HOST': 'CDMORAU\SQLEXPRESS',
@@ -85,6 +86,20 @@ DATABASES = {
         'OPTIONS': {
             #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
             'driver': 'ODBC Driver 13 for SQL Server'
+        }
+    }
+}
+"""""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'CDMORAU\SQLEXPRESS',
+        'PORT': '',
+        'USER': 'sa',
+        'PASSWORD': 'dinosaurio123',
+        'NAME': 'django_sqlserver2',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
     }
 }
