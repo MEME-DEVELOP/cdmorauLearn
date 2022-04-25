@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <h1>Hola esto es una prueba</h1>
-  </React.StrictMode>
-);
+//Components:
+import CompanyList from "./components/Company/CompanyList";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<CompanyList />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
