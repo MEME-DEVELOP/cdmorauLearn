@@ -77,7 +77,14 @@ WSGI_APPLICATION = 'Proyecto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'django_sqlserver',
+        'USER': 'sa',
+        'PASSWORD': 'dinosaurio123',
+        'HOST': 'CDMORAU\SQLEXPRESS',
+        'PORT': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server'
+        }
     }
 }
 
